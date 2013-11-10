@@ -1,18 +1,12 @@
-
-
-## ADVANCED MODE
-
-![lol](http://cdn.meme.li/i/460x/fmj0j.jpg)
-
 ##  Building with Github
 
 How this works:
 	
-### Commit
+### 1. Commit
 
 Github recieves the commit and sends a payload via a Post-Receive Hook. 
 
-### Github Hook
+### 2. Github Hook
 
 The payload looks something like this:
 
@@ -49,12 +43,14 @@ The payload looks something like this:
 	  }
 	}
 
-### Horrible PHP
+### 3. Horrible PHP
 
 We have a horrible PHP script which parses the payload and sends the `ref` to Jenkins as a Build Paramater. This is because our Jenkins is behind the great firewall of China. 
 
-### Jenkins
+### 4. Jenkins
 
 	Jenkins Build Paramaters == Environment Variables
 
 The build paramater is used to checkout the branch and build it.
+
+![github](http://cdn.memegenerator.net/instances/400x/37900954.jpg)
