@@ -3,6 +3,8 @@ jenkins-workshop
 
 A Jenkins quick start workshop
 
+![lol](https://wiki.jenkins-ci.org/download/attachments/60916342/16116996.jpg?version=1&modificationDate=1332845378000)
+
 ## [Setup](https://github.com/alexfish/jenkins-workshop/blob/master/setup.md)
 
 A quick start guide to get your feet wet.
