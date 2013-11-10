@@ -2,7 +2,7 @@
 
 ![lol](http://i1.kym-cdn.com/photos/images/newsfeed/000/413/041/81e.jpg)
 
-## Get Jenkins
+## Get Easy Jenkins
 
     http://goo.gl/Cf34T
 
@@ -11,6 +11,8 @@
 Manage Jenkins > Manage Plugins > Available > Git Plugin
 
 ## Add A Job
+
+    Build a free-style software project
 
 Call it whatever you like, it's good practice to not include spaces. 
 
