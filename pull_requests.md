@@ -17,3 +17,5 @@ See build status in your pull requests.
 ![sweeet](http://i.imgur.com/vy7PRub.png)
 
 Did I mention I love Github? 
+
+![Lol](http://cdn.memegenerator.net/instances/400x/36099991.jpg)
