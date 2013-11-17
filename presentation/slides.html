@@ -157,7 +157,7 @@
       <div class='content'>
         <h3>3. Horrible PHP</h3>
         
-        <p>We have a horrible PHP script which parses the payload and sends the <code>ref</code> to Jenkins as a Build Paramater. This is because our Jenkins is hidden from the outside world.</p>
+        <p>We have a horrible PHP script which parses the payload and sends the <code>ref</code> to Jenkins as a Build Paramater.</p>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -171,10 +171,195 @@
       </div>
       <div class='spacer bottom'></div>
     </section>
+    <section class='code slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='ruby'>${BRANCH}</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <p><img src="http://cdn.memegenerator.net/instances/400x/37900954.jpg" alt="github" /></p>
+        <h2>Building Pull Requests</h2>
+        
+        <p>How this works:</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>1. Github pull request builder plugin</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p>This plugin does all of the magic, just set it up in Jenkins with a user who has access to your repo.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>2. Create a pull request builder job</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p>This prevents your main job being clogged up and spamming everybody.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>3. Pull request!</h3>
+        
+        <p><img src="http://i.imgur.com/vy7PRub.png" alt="sweeet" /></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Recommended Plugins</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Conditional build step</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p>Do fun stuff with the build paramaters on a per branch basis.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Build Name Setter</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p>Set better names for your builds, we use:</p>
+        
+        <p><textarea class='code' display='none' mode='ruby'>BUILD NUMBER: BRANCH</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>PMD Plugin</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><img src="http://i.imgur.com/yp48zFL.png" alt="PMD" /></p>
+        
+        <p>oclint powered code smell reports.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Warnings Plugin</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><img src="http://i.imgur.com/KDQFy1C.png" alt="WARNING" /></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Build Failure Analyzer</h3>
+        
+        <p><img src="http://i.imgur.com/jkE4ETt.png" alt="FAIL" /></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Jenkins Email Extension Plugin</h3>
+        
+        <p>Nicer looking notification emails</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>hubot</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p>We use hubot to do the following with Jenkins:</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Build status</h3>
+        
+        <p>campfire notifications when a build fails or is restored.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Release</h3>
+        
+        <p>Release builds via campfire with <a href="https://github.com/alexfish/yolo">yolo</a></p>
+        
+        <pre><code>    hubot release BRANCH to EMAIL@EMAIL.com, EMAIL@EMAIL.com
+        </code></pre>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p>fun shit:</p>
+        
+        <pre><code>    https://github.com/ustwo/hubot
+        </code></pre>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Thanks</h2>
       </div>
       <div class='spacer bottom'></div>
     </section>
