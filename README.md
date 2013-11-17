@@ -24,3 +24,5 @@ Which Plugins to Install.
 ## [Hubot](https://github.com/alexfish/jenkins-workshop/blob/master/hubot.md)
 
 Campfire powered magic.
+
+## [Presentation](http://alexfish.github.io/jenkins-workshop)
