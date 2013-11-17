@@ -26,3 +26,5 @@ Which Plugins to Install.
 Campfire powered magic.
 
 ## [Presentation](http://alexfish.github.io/jenkins-workshop)
+
+Presentation mode.
